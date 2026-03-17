@@ -12,7 +12,7 @@ int main() {
     char str[100];
     cout << "Enter a string: ";
     cin.getline(str, 100);
-
+    cout << "Original string: " << str << endl;
     toUpperCase(str);
     cout << "String in uppercase: " << str << endl;
 
