@@ -12,7 +12,7 @@ int main() {
             str[i] = '_';
         }
     }
-    cout << "String after replacing spaces: " << str << endl;
+    cout << "String after replacing spaces:- " << str << endl;
 
     return 0;
 }
