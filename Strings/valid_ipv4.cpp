@@ -19,3 +19,17 @@ bool isValidIPv4(char str[100]) {
     }
     return dots == 4; // Valid IPv4 should have exactly 4 parts
 }
+
+int main() {
+    char str[100];
+    cout << "Enter an IPv4 address: ";
+    cin.getline(str, 100);
+
+    if (isValidIPv4(str)) {
+        cout << "The IPv4 address is valid." << endl;
+    } else {
+        cout << "The IPv4 address is invalid." << endl;
+    }
+
+    return 0;
+}
