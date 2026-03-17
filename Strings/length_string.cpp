@@ -1,9 +1,9 @@
 #include<iostream>
 #include<string>
-usi
+using namespace std;
 int main() {
-    std::string str = "Hello, World!";
-    std::cout << "Length of the string: " << str.length() << std::endl;
+    string str = "Hello, World!";
+    cout << "Length of the string: " << str.length() << std::endl;
     int length = 0;
     return 0;
 }
