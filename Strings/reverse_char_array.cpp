@@ -6,7 +6,7 @@ int main() {
     int length = sizeof(str) - 1; // Subtract 1 to exclude the null terminator
     cout << "Original string: " << str << endl;
     cout << "Length of the character array: " << length << endl;
-    cout << "Half Length of the character array: " << length << endl;
+    cout << "Half Length of the character array: " << length / 2 << endl;
     // Reverse the character array
     for (int i = 0; i < length / 2; i++) {
         char temp = str[i];
