@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 int main() {
-    char str[] = "Hello, World!";
+    char str[] = "Hello, Anshul!";
     int length1 = sizeof(str) - 1; // Subtract 1 to exclude the null terminator
     cout << "Length of the character array: " << length1 << endl;
     int length2 = 0;
