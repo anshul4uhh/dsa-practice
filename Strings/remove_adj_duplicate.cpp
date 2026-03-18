@@ -5,7 +5,7 @@ string removeAdjacentDuplicates(const string& str) {
     if (str.empty()) {
         return "";
     }
-
+    int length = str.length();
     string result;
     result += str[0]; // Add the first character to the result
 
