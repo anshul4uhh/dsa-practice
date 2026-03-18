@@ -8,6 +8,6 @@ string erase_substring(string& str,string& part){
         return " ";
     }
     while(str.find(part) != string::npos){
-        i
+        int pos = str.find(part);
     }
 }
