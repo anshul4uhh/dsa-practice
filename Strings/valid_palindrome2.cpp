@@ -6,7 +6,7 @@ bool isPalindrome(char str[100]) {
     int right = strlen(str) - 1;
     bool del = false;
     while (left < right) {
-        if (str[left] != str[right]) {
+        if (str[left] != str[right] && del) {
             return false; // Not a palindrome
         }
         left++;
