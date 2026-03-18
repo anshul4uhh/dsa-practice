@@ -17,3 +17,13 @@ string removeAdjacentDuplicates(const string& str) {
 
     return result;
 }
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+
+    string output = removeAdjacentDuplicates(input);
+    cout << "String after removing adjacent duplicates: " << output << endl;
+
+    return 0;
+}
