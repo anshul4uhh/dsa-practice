@@ -25,7 +25,7 @@ int main() {
     getline(cin, part);
     cout << "String part: " << part << endl;
     string output = erase_substring(input,part);
-    cout << "String after removing adjacent duplicates: " << output << endl;
+    cout << "String after removing specific part: " << output << endl;
 
     return 0;
 }
