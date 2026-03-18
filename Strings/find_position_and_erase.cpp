@@ -10,5 +10,7 @@ string erase_substring(string& str,string& part){
     int length = part.length();
     while(str.find(part) != string::npos){
         int pos = str.find(part);
+        str.erase(pos,length);
     }
+    
 }
