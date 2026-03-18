@@ -10,7 +10,7 @@ bool isPalindrome(char str[100]) {
             return false; // Not a palindrome
         }
         if (str[left] != str[right] && !del) {
-            return false; // Not a palindrome
+            return false; 
         }
         left++;
         right--;
