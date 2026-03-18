@@ -8,9 +8,12 @@ string removeAdjacentDuplicates(const string& str) {
     int length = str.length();
     string result;
     result += str[0]; // Add the first character to the result
-    int i=0;
+    int i=1,j=0;
     while(i<length){
-        
+        if(j>=0 && result[j]==str[i]){
+            result.pop_back();
+            j--;
+        }
     }
 
 
