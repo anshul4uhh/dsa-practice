@@ -11,6 +11,8 @@ bool isPalindrome(char str[100]) {
         }
         if (str[left] != str[right] && !del) {
             del=true;//ignoring one char only
+            left++;
+            right--;
         }
         left++;
         right--;
