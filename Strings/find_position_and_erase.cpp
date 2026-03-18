@@ -2,6 +2,6 @@
 #include<string>
 using namespace std;
 
-string erase_substring(string str){
+string erase_substring(string& str){
     
 }
