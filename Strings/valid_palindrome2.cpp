@@ -1,30 +1,35 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
-bool isPalindrome(char str[100]) {
-    int left = 0;
-    int right = strlen(str) - 1;
-    bool del = false;
-    while (left < right) {
-        if (str[left] != str[right] && del) {
-            return false; // Not a palindrome
-        }
-        if (str[left] != str[right] && !del) {
-            del=true;//ignoring one char only
+bool isPal(string &s, int left, int right){
+        while(left < right){
+            if(s[left] != s[right]) return false;
             left++;
             right--;
         }
-        left++;
-        right--;
+        return true;
     }
-    return true; // Is a palindrome
-}
+
+    bool validPalindrome(string s) {
+        int left = 0;
+        int right = s.length() - 1;
+
+        while(left < right){
+            if(s[left] != s[right]){
+                return isPal(s, left+1, right) || isPal(s, left, right-1);
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
 int main() {
     char str[100];
     cout << "Enter a string: ";
     cin.getline(str, 100);
 
-    if (isPalindrome(str)) {
+    if (validPalindrome(str)) {
         cout << "The string is a palindrome after deleting at most one char." << endl;
     } else {
         cout << "The string is not a palindrome." << endl;
