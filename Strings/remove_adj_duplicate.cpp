@@ -15,7 +15,7 @@ string removeAdjacentDuplicates(const string& str) {
             j--;
         }else{
             result.push_back(str[i]);
-            
+            j++;
         }
     }
 
