@@ -12,5 +12,5 @@ string erase_substring(string& str,string& part){
         int pos = str.find(part);
         str.erase(pos,length);
     }
-    
+    return str;
 }
