@@ -13,6 +13,8 @@ string removeAdjacentDuplicates(const string& str) {
         if(j>=0 && result[j]==str[i]){
             result.pop_back();
             j--;
+        }else{
+            
         }
     }
 
