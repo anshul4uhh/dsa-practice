@@ -9,6 +9,9 @@ bool isPalindrome(char str[100]) {
         if (str[left] != str[right] && del) {
             return false; // Not a palindrome
         }
+        if (str[left] != str[right] && del) {
+            return false; // Not a palindrome
+        }
         left++;
         right--;
     }
