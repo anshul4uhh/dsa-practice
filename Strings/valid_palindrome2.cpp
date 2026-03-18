@@ -25,7 +25,7 @@ int main() {
     cin.getline(str, 100);
 
     if (isPalindrome(str)) {
-        cout << "The string is a palindrome." << endl;
+        cout << "The string is a palindrome after deleting at most one char." << endl;
     } else {
         cout << "The string is not a palindrome." << endl;
     }
