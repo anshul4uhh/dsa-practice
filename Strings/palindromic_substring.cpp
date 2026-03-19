@@ -20,3 +20,14 @@ int countPalindromicSubstrings(const string& s) {
     }
     return count;
 }
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+    cout << "Original string: " << input << endl;
+    int output = countPalindromicSubstrings(input);
+    cout << "Number of palindromic substrings: " << output << endl;
+
+    return 0;
+}
