@@ -9,7 +9,7 @@ int expandAroundCenter(const string& s, int left, int right) {
         left--;
         right++;
     }
-    return right - left - 1; // Length of the palindrome
+    return count; 
 }
 
 int countPalindromicSubstrings(const string& s) {
