@@ -19,4 +19,10 @@ string reverseOnlyLetters(string s) {
         }
         return s;
     }
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+    cout << "Original string: " << input << endl;
     
