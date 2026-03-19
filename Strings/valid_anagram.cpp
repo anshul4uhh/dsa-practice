@@ -5,7 +5,7 @@ bool isAnagram(string s, string t) {
     if(s.length() != t.length()){
         return false;
     }
-    int count[26] = {0};
+    int count[256] = {0};
     for(int i=0;i<s.length();i++){
         count[s[i]-'a']++;
         count[t[i]-'a']--;
