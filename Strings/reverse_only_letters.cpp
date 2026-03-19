@@ -25,4 +25,7 @@ int main() {
     cout << "Enter a string: ";
     getline(cin, input);
     cout << "Original string: " << input << endl;
-    
+    string output = reverseOnlyLetters(input);
+    cout << "String after reversing only letters: " << output << endl;
+    return 0;
+}
