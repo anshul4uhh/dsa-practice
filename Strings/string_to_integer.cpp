@@ -7,6 +7,7 @@ int main() {
     getline(cin, input);
     int i=0,n=input.length();
     while(i<n && input[i]==' ') i++;
+    int sign=1;
     
     return 0;
 }
