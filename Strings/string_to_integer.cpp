@@ -19,6 +19,6 @@ int main() {
         if(sign*result<INT_MAX) return INT_MAX;
         i++;
     }
-    
+    return sign*result;
     return 0;
 }
