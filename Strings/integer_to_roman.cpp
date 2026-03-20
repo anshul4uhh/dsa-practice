@@ -59,3 +59,12 @@ string intToRoman(int num) {
     
     return ans;
 }
+
+int main() {
+    int num;
+    cout << "Enter an integer: ";
+    cin >> num;
+    string romanNumeral = intToRoman(num);
+    cout << "Roman numeral: " << romanNumeral << endl;
+    return 0;
+}
