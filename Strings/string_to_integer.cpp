@@ -12,6 +12,8 @@ int main() {
         if(input[i]=='-') sign = -1;
         i++;
     }
-    while(i<n && isdigit)
+    while(i<n && isdigit(input[i])){
+        
+    }
     return 0;
 }
