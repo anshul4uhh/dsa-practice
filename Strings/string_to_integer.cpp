@@ -15,8 +15,6 @@ int main() {
     long result = 0;
     while(i<n && isdigit(input[i])){
         result = result*10 + (input[i] - '0');
-        if(sign*result<INT_MIN) return INT_MIN;
-        if(sign*result<INT_MAX) return INT_MAX;
         i++;
     }
     return sign*result;
