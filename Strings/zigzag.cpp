@@ -18,3 +18,6 @@ string convert(string s, int numRows) {
     }
 
 int main() {
+    string input;   
+    cout << "Enter a string: ";
+    getline(cin, input);
