@@ -17,3 +17,11 @@ string compressString(string s) {
     }
     return ans;
 }
+int main() {
+    string input;   
+    cout << "Enter a string: ";
+    getline(cin, input);
+    string output = compressString(input);
+    cout << "Compressed string: " << output << endl;
+    return 0;
+}
