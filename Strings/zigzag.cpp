@@ -16,3 +16,5 @@ string convert(string s, int numRows) {
         }
         return ans;
     }
+
+int main() {
