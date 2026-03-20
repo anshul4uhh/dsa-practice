@@ -1,6 +1,9 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+
+
 string compressString(string s) {
     string ans="";
     int n = s.length();
