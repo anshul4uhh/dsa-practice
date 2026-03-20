@@ -21,3 +21,10 @@ int main() {
     string input;   
     cout << "Enter a string: ";
     getline(cin, input);
+    int numRows;
+    cout << "Enter the number of rows: ";
+    cin >> numRows;
+    string output = convert(input, numRows);
+    cout << "Zigzag converted string: " << output << endl;
+    return 0;
+}
