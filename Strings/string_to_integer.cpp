@@ -17,6 +17,6 @@ int main() {
         result = result*10 + (input[i] - '0');
         i++;
     }
-    return sign*result;
+    cout<<"Integer is: "<<sign*result;
     return 0;
 }
