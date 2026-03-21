@@ -32,7 +32,7 @@ string reorganizeString(string s) {
     return s;
 }
 int main() {
-    string input = "aab";
+    string input = "aaab";
     string result = reorganizeString(input);
     if (result.empty()) {
         cout << "Cannot reorganize the string." << endl;
