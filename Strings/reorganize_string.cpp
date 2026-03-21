@@ -20,8 +20,8 @@ string reorganizeString(string s) {
         return "";
     }
 
-    for(int i = 0; i < s.length(); i++) {
-        
+    for(int i = 0; i < 26; i++) {
+        while
     }
     
     return s;
