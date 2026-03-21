@@ -19,7 +19,7 @@ string reorganizeString(string s) {
     if (maxCount > (s.length() + 1) / 2) {
         return "";
     }
-  
+
 
     
     return s;
