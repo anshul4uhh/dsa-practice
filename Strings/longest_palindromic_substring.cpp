@@ -36,7 +36,7 @@ int countPalindromicSubstrings(const string& s) {
         longestPalindromeOverall = longestPalindrome_even;
     }
     cout << "Longest palindromic substring overall: " << longestPalindromeOverall << endl;
-    
+    return longestPalindromeOverall.length();
 }
 
 int main() {
