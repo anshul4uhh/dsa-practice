@@ -16,21 +16,26 @@ string reorganizeString(string s) {
             maxChar = 'a' + i;
         }
     }
-    if (maxCount > (s.length() + 1) / 2) {
+    int index=0;
+    while(maxCount>0 && index<s.size()){
+        s[index] = maxChar;
+        maxCount--;
+        index+=2;
+    }
+    if (maxCount != 0) {
         return "";
     }
-    int index = 0;
+    charCount[maxChar - 'a']=0;
     for(int i = 0; i < 26; i++) {
         while(charCount[i] > 0) {
-            index = (index >= s.length()) ? 1 : index; // Switch to odd indices after filling even ones
+            index = (index >= s.length()) ? 1 : index; 
             s[index] = 'a' + i;
             index+=2;
             charCount[i]--;
         }
     }
-    
     return s;
-}
+    }
 int main() {
     string input = "aaab";
     string result = reorganizeString(input);
