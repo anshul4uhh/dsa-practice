@@ -21,7 +21,10 @@ string reorganizeString(string s) {
     }
 
     for(int i = 0; i < 26; i++) {
-        while
+        while(charCount[i] > 0) {
+            s += ('a' + i);
+            charCount[i]--;
+        }
     }
     
     return s;
