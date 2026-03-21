@@ -31,3 +31,13 @@ string reorganizeString(string s) {
     
     return s;
 }
+int main() {
+    string input = "aab";
+    string result = reorganizeString(input);
+    if (result.empty()) {
+        cout << "Cannot reorganize the string." << endl;
+    } else {
+        cout << "Reorganized string: " << result << endl;
+    }
+    return 0;
+}
