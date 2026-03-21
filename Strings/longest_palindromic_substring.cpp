@@ -2,7 +2,7 @@
 #include<string>    
 using namespace std;
 
-int expandAroundCenter(const string& s, int left, int right) {
+string expandAroundCenter(const string& s, int left, int right) {
     int count = 0;
     string longestPalindrome;
     int maxLength = 0;
@@ -17,18 +17,26 @@ int expandAroundCenter(const string& s, int left, int right) {
         right++;
     }
     cout << "Longest palindromic substring: " << longestPalindrome << endl;
-    return count; 
+    return longestPalindrome;
 }
 
 int countPalindromicSubstrings(const string& s) {
-    int count = 0;
+    string longestPalindromeOverall;
+    string longestPalindrome_odd;
+    string longestPalindrome_even;
     for (int i = 0; i < s.length(); i++) {
         // Odd length palindromes
-        count += expandAroundCenter(s, i, i);
+        longestPalindrome_odd = expandAroundCenter(s, i, i);
         // Even length palindromes
-        count += expandAroundCenter(s, i, i + 1);
+        longestPalindrome_even = expandAroundCenter(s, i, i + 1);
     }
-    return count;
+    if(longestPalindrome_odd.length() > longestPalindrome_even.length()) {
+        longestPalindromeOverall = longestPalindrome_odd;
+    } else {
+        longestPalindromeOverall = longestPalindrome_even;
+    }
+    cout << "Longest palindromic substring overall: " << longestPalindromeOverall << endl;
+    
 }
 
 int main() {
