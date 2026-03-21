@@ -23,7 +23,7 @@ string reorganizeString(string s) {
     for(int i = 0; i < 26; i++) {
         while(charCount[i] > 0) {
             s[index] = 'a' + i;
-            index++;
+            index+=2;
             charCount[i]--;
         }
     }
