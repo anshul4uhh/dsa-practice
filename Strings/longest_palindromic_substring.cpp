@@ -10,6 +10,9 @@ int expandAroundCenter(const string& s, int left, int right) {
         count++;
         int currentLength = right - left + 1;
         if (currentLength > maxLength) {
+            maxLength = currentLength;
+            longestPalindrome = s.substr(left, currentLength);
+        }
         left--;
         right++;
     }
