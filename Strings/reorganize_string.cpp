@@ -20,7 +20,12 @@ string reorganizeString(string s) {
         return "";
     }
 
-
+    for(int i = 0; i < s.length(); i++) {
+        if (i % 2 == 0) {
+            s[i] = maxChar;
+            charCount[maxChar - 'a']--;
+        }
+    }
     
     return s;
 }
