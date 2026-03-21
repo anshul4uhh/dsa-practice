@@ -8,6 +8,7 @@ int main() {
     cout << "Address of a: " << &a << endl; // Output: address of a
     cout << "Value stored in ptr (address of a): " << ptr << endl; // Output: address of a
     cout << "Value pointed to by ptr (value of a): " << *ptr << endl; // Output: 10
+    
 
     return 0;
 }
