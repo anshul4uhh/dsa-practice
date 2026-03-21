@@ -20,7 +20,7 @@ string expandAroundCenter(const string& s, int left, int right) {
     return longestPalindrome;
 }
 
-int countPalindromicSubstrings(const string& s) {
+int count_length_PalindromicSubstrings(const string& s) {
     string longestPalindromeOverall;
     string longestPalindrome_odd;
     string longestPalindrome_even;
@@ -44,8 +44,8 @@ int main() {
     cout << "Enter a string: ";
     getline(cin, input);
     cout << "Original string: " << input << endl;
-    int output = countPalindromicSubstrings(input);
-    cout << "Number of palindromic substrings: " << output << endl;
+    int output = count_length_PalindromicSubstrings(input);
+    cout << "Length of longest palindromic substring: " << output << endl;
 
     return 0;
 }
