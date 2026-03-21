@@ -16,6 +16,7 @@ int expandAroundCenter(const string& s, int left, int right) {
         left--;
         right++;
     }
+    cout << "Longest palindromic substring: " << longestPalindrome << endl;
     return count; 
 }
 
