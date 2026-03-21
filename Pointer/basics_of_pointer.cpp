@@ -9,6 +9,8 @@ int main() {
     cout << "Value stored in ptr (address of a): " << ptr << endl; // Output: address of a
     cout << "Value pointed to by ptr (value of a): " << *ptr << endl; // Output: 10
     cout << "Address of ptr: " << &ptr << endl; // Output: address of ptr
+    cout<< "Size of int: " << sizeof(int) << " bytes" << endl; // Output: size of int
+    c
 
     return 0;
 }
