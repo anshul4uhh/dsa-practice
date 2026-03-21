@@ -4,6 +4,7 @@ using namespace std;
 
 int expandAroundCenter(const string& s, int left, int right) {
     int count = 0;
+    string longestPalindrome;
     while (left >= 0 && right < s.length() && s[left] == s[right]) {
         count++;
         left--;
