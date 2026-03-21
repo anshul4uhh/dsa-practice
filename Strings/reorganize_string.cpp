@@ -22,7 +22,7 @@ string reorganizeString(string s) {
     int index = 0;
     for(int i = 0; i < 26; i++) {
         while(charCount[i] > 0) {
-            index 
+            index = (index >= s.length()) ? 1 : index; // Switch to odd indices after filling even ones
             s[index] = 'a' + i;
             index+=2;
             charCount[i]--;
