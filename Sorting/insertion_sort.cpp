@@ -19,3 +19,13 @@ void printArray(int arr[], int n) {
     }
     cout << endl;
 }
+int main() {
+    int arr[] = {12, 11, 13, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Original array: ";
+    printArray(arr, n);
+    insertionSort(arr, n);
+    cout << "Sorted array: ";
+    printArray(arr, n);
+    return 0;
+}
