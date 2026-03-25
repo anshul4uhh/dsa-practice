@@ -6,4 +6,7 @@ void fibonacci(int n){
         cout<<n<<" ";
         return;
     }
+    fibonacci(n-1);
+    cout<<n<<" ";
+
 }
