@@ -31,7 +31,7 @@ void generate_subsequences(string str, string output, int index) {
 }
 
 int main() {
-    string str = "abc";
+    string str = "madam";
     generate_subsequences(str, "", 0);
     return 0;
 }
