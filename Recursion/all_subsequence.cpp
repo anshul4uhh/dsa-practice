@@ -7,7 +7,8 @@ void generate_subsequences(string str, string output, int index) {
         return;
     }
     // Include the current character and move to the next index
-    generate_subsequences(str, output + str[index], index + 1);
+    generate_subsequences(str, output, index + 1);
+    
     // Exclude the current character and move to the next index
     generate_subsequences(str, output, index + 1);
 }
