@@ -10,3 +10,14 @@ bool is_sorted(int arr[], int n) {
     }
     return is_sorted(arr, n - 1); // Recursive call with the rest of the array
 }
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    if(is_sorted(arr, n)) {
+        cout << "Array is sorted." << endl;
+    } else {
+        cout << "Array is not sorted." << endl;
+    }
+    return 0;
+}
