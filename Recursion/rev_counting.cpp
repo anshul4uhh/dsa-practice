@@ -8,3 +8,12 @@ void reverse_counting(int n) {
     cout << n << " "; // Print the current number
     reverse_counting(n - 1); // Recursive call with n decremented by 1
 }
+int main() {
+    int number;
+    cout << "Enter a number to start reverse counting: ";
+    cin >> number;
+    cout << "Reverse counting from " << number << ": ";
+    reverse_counting(number);
+    cout << endl; // Print a newline after counting
+    return 0;
+}
