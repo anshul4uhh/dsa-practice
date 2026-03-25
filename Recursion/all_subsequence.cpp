@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-bool isPalindrome(char str[100]) {
+bool isPalindrome(string str) {
     int left = 0;
-    int right = strlen(str) - 1;
+    int right = str.length() - 1;
 
     while (left < right) {
         if (str[left] != str[right]) {
@@ -17,7 +17,9 @@ bool isPalindrome(char str[100]) {
 
 void generate_subsequences(string str, string output, int index) {
     if(index >= str.length()) {
-        cout << output << endl; // Base case: print the current subsequence
+        if(isPalindrome(output)) {
+            cout << output << endl; // Print the current subsequence if it's a palindrome
+        }
         return;
     }
     // Include the current character and move to the next index
