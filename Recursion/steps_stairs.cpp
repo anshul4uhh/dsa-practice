@@ -3,7 +3,7 @@ using namespace std;
 
 
 int count_ways(int n) {
-    if(n == 0) {
+    if(n == 0 ||) {
         return 1; // Base case: there's one way to climb zero steps (do nothing)
     }
     if(n < 0) {
