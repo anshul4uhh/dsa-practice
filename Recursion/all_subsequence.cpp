@@ -17,7 +17,7 @@ bool isPalindrome(string str) {
 
 void generate_subsequences(string str, string output, int index) {
     int n = str.length();
-    if(index >= str.length()) {
+    if(index >= n) {
         if(isPalindrome(output)) {
             cout << output << endl; // Print the current subsequence if it's a palindrome
         }
