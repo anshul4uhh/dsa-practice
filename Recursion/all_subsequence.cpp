@@ -12,3 +12,9 @@ void generate_subsequences(string str, string output, int index) {
     // Exclude the current character and move to the next index
     generate_subsequences(str, output, index + 1);
 }
+
+int main() {
+    string str = "abc";
+    generate_subsequences(str, "", 0);
+    return 0;
+}
