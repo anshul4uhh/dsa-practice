@@ -8,5 +8,5 @@ void fibonacci(int n){
     }
     fibonacci(n-1);
     cout<<n<<" ";
-
+    fibonacci(n-2); 
 }
