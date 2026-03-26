@@ -2,7 +2,7 @@
 using namespace std;
 
 void add_strings(string& str1, string& str2, string& result, int index1, int index2, int carry) {
-    if(index1 < 0 && index2 < 0 && carry == 0) {
+    if(index1 < 0 && index2 < 0) {
         cout << "Sum of the two strings: " << result << endl;
         return; // Base case: both strings are processed and no carry left
     }
