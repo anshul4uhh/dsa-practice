@@ -7,5 +7,6 @@ void remove_occurences(string& s, string& part){
         cout << "Final string after removing all occurrences: " << s << endl;
         return; // Base case: no more occurrences found
     }
-    
+    s.erase(index, part.length()); // Remove the found occurrence
+    remove_occurences(s, part); // Recursive call to check for the next occurrence
 }
