@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void add_strings(string str1, string str2, string result, int index1, int index2, int carry) {
+void add_strings(string& str1, string& str2, string& result, int index1, int index2, int carry) {
     if(index1 < 0 && index2 < 0 && carry == 0) {
         cout << "Sum of the two strings: " << result << endl;
         return; // Base case: both strings are processed and no carry left
@@ -10,9 +10,10 @@ void add_strings(string str1, string str2, string result, int index1, int index2
     int digit2 = (index2 >= 0) ? str2[index2] - '0' : 0; // Get digit from str2 or 0 if index is out of bounds
     int sum = digit1 + digit2 + carry; // Calculate the sum of the digits and carry
     carry = sum / 10; // Update carry for the next iteration
-    
+    result.push_back((sum % 10) + '0'); // Append the last digit of the sum to the result
 
-    add_strings(str1, str2, result, index1 + 1, index2 + 1, carry); // Recursive call for the next digits
+
+    add_strings(str1, str2, result, index1 - 1, index2 - 1, carry); // Recursive call for the next digits
 }
 
 int main() {
