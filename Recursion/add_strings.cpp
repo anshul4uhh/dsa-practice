@@ -19,7 +19,7 @@ void add_strings(string& str1, string& str2, string& result, int index1, int ind
 }
 
 int main() {
-    string str1 = "123";
+    string str1 = "647";
     string str2 = "456";
     string result = "";
     int carry = 0;
