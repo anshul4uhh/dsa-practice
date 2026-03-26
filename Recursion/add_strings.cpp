@@ -1,4 +1,6 @@
 #include<iostream>
+#include<algorithm>
+#include<string>
 using namespace std;
 
 void add_strings(string& str1, string& str2, string& result, int index1, int index2, int carry) {
