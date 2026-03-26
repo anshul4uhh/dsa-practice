@@ -1,20 +1,21 @@
 #include<iostream>
 using namespace std;
 
-void reverse_string(string str, string output, int index) {
-    int n = str.length();
-    if(index >= n) {
-        cout << "Reversed string: " << output << endl;
+void reverse_string(string str, int start,int end) {
+    if(start >= end) {
+        cout << "Reversed string: " << str << endl;
         return;
     }
-    // Recursive call to process the next character
-    reverse_string(str, output, index + 1);
-    output.push_back(str[index]); // Add the current character to the output after the recursive call
+    // Swap characters at start and end
+    char temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+    // Recursive call to process the remaining characters
+    reverse_string(str, start + 1, end - 1);
 }
 
 int main() {
     string str = "hello";
-    string output = "";
-    reverse_string(str, output, 0);
+    reverse_string(str, 0, str.length() - 1);
     return 0;
 }
