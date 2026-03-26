@@ -17,6 +17,6 @@ int main() {
     string str1 = "123";
     string str2 = "456";
     string result = "";
-    add_strings(str1, str2, result, 0, 0);
+    add_strings(str1, str2, result, str1.length() - 1, str2.length() - 1);
     return 0;
 }
