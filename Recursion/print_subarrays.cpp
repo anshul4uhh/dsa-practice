@@ -22,9 +22,7 @@ void print_subarrays(vector<int>& arr) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    vector<int> vec(arr, arr + n);
+    vector<int> vec = {1, 2, 3};
     cout << "All subarrays of the given array are:" << endl;
     print_subarrays(vec);
     return 0;
