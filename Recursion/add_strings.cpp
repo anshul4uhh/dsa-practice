@@ -11,8 +11,6 @@ void add_strings(string& str1, string& str2, string& result, int index1, int ind
     int sum = digit1 + digit2 + carry; // Calculate the sum of the digits and carry
     carry = sum / 10; // Update carry for the next iteration
     result.push_back((sum % 10) + '0'); // Append the last digit of the sum to the result
-
-
     add_strings(str1, str2, result, index1 - 1, index2 - 1, carry); // Recursive call for the next digits
 }
 
