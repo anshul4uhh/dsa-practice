@@ -3,7 +3,9 @@ using namespace std;
 
 void add_strings(string& str1, string& str2, string& result, int index1, int index2, int carry) {
     if(index1 < 0 && index2 < 0) {
-        cout << "Sum of the two strings: " << result << endl;
+        if(carry > 0) {
+            result.push_back(carry + '0'); // Append remaining carry if exists
+        }
         return; // Base case: both strings are processed and no carry left
     }
     int digit1 = (index1 >= 0) ? str1[index1] - '0' : 0; // Get digit from str1 or 0 if index is out of bounds
