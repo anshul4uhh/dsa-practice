@@ -12,3 +12,11 @@ void add_strings(string str1, string str2, string result, int index1, int index2
     result.insert(result.begin(), (sum % 10) + '0'); // Add the last digit of the sum to the result
     add_strings(str1, str2, result, index1 + 1, index2 + 1); // Recursive call for the next digits
 }
+
+int main() {
+    string str1 = "123";
+    string str2 = "456";
+    string result = "";
+    add_strings(str1, str2, result, 0, 0);
+    return 0;
+}
