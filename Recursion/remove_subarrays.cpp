@@ -10,3 +10,10 @@ void remove_occurences(string& s, string& part){
     s.erase(index, part.length()); // Remove the found occurrence
     remove_occurences(s, part); // Recursive call to check for the next occurrence
 }
+
+int main() {
+    string s = "daabcbaabcbc";
+    string part = "abc";
+    remove_occurences(s, part);
+    return 0;
+}
