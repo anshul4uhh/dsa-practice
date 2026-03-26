@@ -5,8 +5,6 @@ void print_subarrays(int arr[], int n, int start, int end) {
     for(int i = start; i <= end; i++) {
         cout << arr[i] << " ";
     }
-    cout << endl;
-    print_subarrays(arr, n, start + 1, end); // Move to the next starting index
 }
 
 int main() {
