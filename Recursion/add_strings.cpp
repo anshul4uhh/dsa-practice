@@ -22,5 +22,8 @@ int main() {
     string result = "";
     int carry = 0;
     add_strings(str1, str2, result, str1.length() - 1, str2.length() - 1, carry);
+    // Reverse the result since we built it backwards
+    reverse(result.begin(), result.end());
+    cout << "Sum of the two strings: " << result << endl;
     return 0;
 }
