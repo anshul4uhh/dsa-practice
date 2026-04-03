@@ -11,3 +11,15 @@ int numRollsToTarget_helper(int n, int k, int target) {
     }
     return count;
 }
+int numRollsToTarget(int n, int k, int target) {
+    return numRollsToTarget_helper(n, k, target); // Start the recursive helper function
+}
+int main() {
+    int n = 2; // Number of dice
+    int k = 6; // Number of faces on each die
+    int target = 7; // Target sum to achieve
+    cout << "Calculating number of ways to roll " << n << " dice with " << k << " faces to achieve target " << target << "..." << endl;
+    int result = numRollsToTarget(n, k, target);
+    cout << "Number of ways to achieve the target: " << result << endl;
+    return 0;
+}
