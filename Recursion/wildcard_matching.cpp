@@ -12,3 +12,14 @@ bool wildcard_matching_helper(const string& s, const string& p, int i, int j) {
     }
     return false; // No match found
 }
+bool wildcard_matching(const string& s, const string& p) {
+    return wildcard_matching_helper(s, p, 0, 0); // Start the recursive helper function
+}
+int main() {
+    string s = "adceb"; // Input string
+    string p = "*a*b"; // Pattern with wildcards
+    cout << "Checking if the string \"" << s << "\" matches the pattern \"" << p << "\"..." << endl;
+    bool result = wildcard_matching(s, p);
+    cout << "Does the string match the pattern? " << (result ? "Yes" : "No") << endl;
+    return 0;
+}
