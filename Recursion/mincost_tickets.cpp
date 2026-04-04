@@ -14,7 +14,7 @@ int mincost_tickets(vector<int>& days, vector<int>& costs) {
 }
 int main() {
     vector<int> days = {2,5}; // Days on which travel is planned
-    vector<int> costs = {2, 7, 15}; // Costs for 1-day, 7-day, and 30-day tickets
+    vector<int> costs = {1,4,25}; // Costs for 1-day, 7-day, and 30-day tickets
     cout << "Calculating minimum cost for travel tickets..." << endl;
     int result = mincost_tickets(days, costs);
     cout << "Minimum cost to cover all travel days: " << result << endl;
