@@ -13,7 +13,7 @@ int mincost_tickets(vector<int>& days, vector<int>& costs) {
     return mincost_tickets_helper(days, costs, 0); // Start the recursive helper function
 }
 int main() {
-    vector<int> days = {2,5}; // Days on which travel is planned
+    vector<int> days = {2,30}; // Days on which travel is planned
     vector<int> costs = {1,4,25}; // Costs for 1-day, 7-day, and 30-day tickets
     cout << "Calculating minimum cost for travel tickets..." << endl;
     int result = mincost_tickets(days, costs);
