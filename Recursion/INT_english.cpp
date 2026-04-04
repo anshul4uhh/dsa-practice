@@ -29,3 +29,10 @@ string int_to_english_helper(int num) {
 string int_to_english(int num) {
     return int_to_english_helper(num); // Start the recursive helper function
 }
+int main() {
+    int num = 1234567891; // Example number to convert
+    cout << "Converting integer " << num << " to English words..." << endl;
+    string result = int_to_english(num);
+    cout << "English representation: " << result << endl;
+    return 0;
+}
