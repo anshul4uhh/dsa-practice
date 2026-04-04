@@ -26,3 +26,6 @@ string int_to_english_helper(int num) {
     // Handle numbers from 1,000,000,000 and above
     return int_to_english_helper(num / 1000000000) + " Billion" + (num % 1000000000 ? " " + int_to_english_helper(num % 1000000000) : "");
 }
+string int_to_english(int num) {
+    return int_to_english_helper(num); // Start the recursive helper function
+}
