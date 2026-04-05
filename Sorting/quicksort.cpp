@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+void swap(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+int partition(vector<int>& arr, int low, int high) {
+    int pivot = arr[high]; // Choosing the last element as pivot
+    int i = low - 1; // Index of smaller element
+
+    for(int j = low; j < high; j++) {
+        if(arr[j] < pivot) { // If current element is smaller than pivot
+            i++; // Increment index of smaller element
+            swap(arr[i], arr[j]); // Swap
+        }
+    }
+    swap(arr[i + 1], arr[high]); // Swap the pivot element with the element at index i + 1
+    return i + 1; // Return the partitioning index
+}
