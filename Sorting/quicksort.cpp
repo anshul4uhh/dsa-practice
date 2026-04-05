@@ -8,16 +8,16 @@ void swap(int& a, int& b) {
 }
 int partition(vector<int>& arr, int low, int high) {
     int pivot = arr[low]; // Choosing the first element as pivot
-    int i = low - 1; // Index of smaller element
+    int count = 0; // Index of smaller element
     
     for(int j = low; j < high; j++) {
         if(arr[j] < pivot) { // If current element is smaller than pivot
-            i++; // Increment index of smaller element
-            swap(arr[i], arr[j]); // Swap
+            count++; // Increment index of smaller element
+            swap(arr[count], arr[j]); // Swap
         }
     }
-    swap(arr[i + 1], arr[high]); // Swap the pivot element with the element at index i + 1
-    return i + 1; // Return the partitioning index
+    swap(arr[count], arr[high]); // Swap the pivot element with the element at index count
+    return count; // Return the partitioning index
 }
 void quickSort(vector<int>& arr, int low, int high) {
     if(low < high) {
