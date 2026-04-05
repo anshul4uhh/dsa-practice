@@ -7,7 +7,7 @@ void swap(int& a, int& b) {
     b = temp;
 }
 int partition(vector<int>& arr, int low, int high) {
-    int pivot = arr[low]; // Choosing the last element as pivot
+    int pivot = arr[low]; // Choosing the first element as pivot
     int i = low - 1; // Index of smaller element
     
     for(int j = low; j < high; j++) {
