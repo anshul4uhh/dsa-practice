@@ -41,3 +41,23 @@ void mergeSort(vector<int>& arr, int left, int right) {
         merge(arr, left, mid, right); // Merge the sorted halves
     }
 }
+int main() {
+    vector<int> arr = {38, 27, 43, 3, 9, 82, 10}; // Sample array to sort
+    int n = arr.size();
+
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    mergeSort(arr, 0, n - 1); // Sort the array using merge sort
+
+    cout << "Sorted array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
