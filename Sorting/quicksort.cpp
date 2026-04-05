@@ -27,3 +27,23 @@ void quickSort(vector<int>& arr, int low, int high) {
         quickSort(arr, pi + 1, high); // Recursively sort elements after partition
     }
 }
+int main() {
+    vector<int> arr = {10, 7, 8, 9, 1, 5}; // Sample array to sort
+    int n = arr.size();
+
+    cout << "Original array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    quickSort(arr, 0, n - 1); // Sort the array using quicksort
+
+    cout << "Sorted array: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
