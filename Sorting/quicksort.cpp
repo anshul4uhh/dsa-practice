@@ -7,17 +7,7 @@ void swap(int& a, int& b) {
     b = temp;
 }
 int partition(vector<int>& arr, int low, int high) {
-    int pivot = arr[low]; // Choosing the first element as pivot
-    int count = 0; // Index of smaller element
-    
-    for(int j = low; j < high; j++) {
-        if(arr[j] < pivot) { // If current element is smaller than pivot
-            count++; // Increment index of smaller element
-            swap(arr[count], arr[j]); // Swap
-        }
-    }
-    swap(arr[count], arr[high]); // Swap the pivot element with the element at index count
-    return count; // Return the partitioning index
+    int 
 }
 void quickSort(vector<int>& arr, int low, int high) {
     if(low < high) {
