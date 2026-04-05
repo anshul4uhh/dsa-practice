@@ -31,4 +31,13 @@ void merge(vector<int>& arr, int left, int mid, int right) {
         arr[k++] = R[j++]; // Add remaining elements from right subarray
     }
 }
-v
+void mergeSort(vector<int>& arr, int left, int right) {
+    if(left < right) {
+        int mid = left + (right - left) / 2; // Find the midpoint
+
+        mergeSort(arr, left, mid); // Sort the left half
+        mergeSort(arr, mid + 1, right); // Sort the right half
+
+        merge(arr, left, mid, right); // Merge the sorted halves
+    }
+}
