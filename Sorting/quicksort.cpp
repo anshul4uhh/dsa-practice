@@ -19,3 +19,11 @@ int partition(vector<int>& arr, int low, int high) {
     swap(arr[i + 1], arr[high]); // Swap the pivot element with the element at index i + 1
     return i + 1; // Return the partitioning index
 }
+void quickSort(vector<int>& arr, int low, int high) {
+    if(low < high) {
+        int pi = partition(arr, low, high); // Partitioning index
+
+        quickSort(arr, low, pi - 1); // Recursively sort elements before partition
+        quickSort(arr, pi + 1, high); // Recursively sort elements after partition
+    }
+}
