@@ -27,7 +27,7 @@ void quickSort(vector<int>& arr, int low, int high) {
     }
 }
 int main() {
-    vector<int> arr = {10, 7, 8, 9, 1,1,1,1,3,3,3,4, 5}; // Sample array to sort
+    vector<int> arr = {10, 7, 8, 9, 1,1,1,1,3,3,3,4,6,6, 5}; // Sample array to sort
     int n = arr.size();
 
     cout << "Original array: ";
