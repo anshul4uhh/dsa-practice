@@ -7,7 +7,9 @@ void swap(int& a, int& b) {
     b = temp;
 }
 int partition(vector<int>& arr, int low, int high) {
-    int 
+    int pivot = arr[low]; // Choosing the first element as pivot
+    int i = low + 1; // Index of smaller element
+    
 }
 void quickSort(vector<int>& arr, int low, int high) {
     if(low < high) {
