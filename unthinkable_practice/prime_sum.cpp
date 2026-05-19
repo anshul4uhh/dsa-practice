@@ -3,4 +3,4 @@
 #include<algorithm>
 using namespace std;
 
-void mark_prime(int n,)
+void mark_prime(int n,vector<int>&)
