@@ -5,4 +5,5 @@ using namespace std;
 
 void mark_prime(int n,vector<int>&prime){
     
+
 }
