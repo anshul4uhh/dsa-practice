@@ -18,12 +18,20 @@ void mark_prime(int n,vector<int>&prime){
 
 int main(){
     int n;
-    cout<<"emter value of n: ";
+    cout<<"emter value of first range: ";
     cin>>n;
-    vector<int>prime(n+1,1);
-    mark_prime(n,prime);
-    for(int i=0;i<=n;i++){
-        if(prime[i]) cout<<i<<" ";
+    int m;
+    cout<<"emter value of 2nd range: ";
+    cin>>m;
+    vector<int>prime(m+1,1);
+    mark_prime(m,prime);
+    int sum=0;
+    for(int i=n;i<=m;i++){
+        if(i>=n && prime[i] && i<=m) {
+            cout<<i<<" ";
+            sum+=i;
+        }
     }
+    cout<<endl<<"sum: "<<sum;
     return 0;
 }
