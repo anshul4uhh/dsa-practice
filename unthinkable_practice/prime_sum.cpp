@@ -3,3 +3,4 @@
 #include<algorithm>
 using namespace std;
 
+void mark_prime(int n,)
