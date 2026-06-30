@@ -50,6 +50,6 @@ int main() {
         cout << temp->data << " ";
         temp = temp->next;
     }
-
+    cout << endl;
     return 0;
 }
