@@ -40,6 +40,25 @@ void insertAtTail(Node*& head, int value) {
     temp->next = newNode;
 }
 
+void insertAtPosition(Node*& head, int position, int value) {
+    if (position == 0) {
+        insertAtHead(head, value);
+        return;
+    }
+    Node* newNode = new Node(value);
+    Node* temp = head;
+    for (int i = 0; i < position - 1 && temp != NULL; i++) {
+        temp = temp->next;
+    }
+    if (temp == NULL) {
+        cout << "Position out of bounds." << endl;
+        delete newNode;
+        return;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
 int main() {
     int n;
     cout << "Enter number of nodes: ";
