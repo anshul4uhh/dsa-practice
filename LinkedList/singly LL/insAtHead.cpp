@@ -6,6 +6,10 @@ class Node{
     public:
     int data;
     Node* next;
+    Node(){
+        this->data = 0;
+        this->next = NULL;
+    }
     Node(int data){
         this->data = data;
         this->next = NULL;
@@ -13,7 +17,7 @@ class Node{
 };
 
 int main(){
-    Node* head = new Node(10); // dummy head node
+    Node* head = new Node(); // dummy head node
     int n;
     cout<<"enter the number of nodes: ";
     cin>>n;
