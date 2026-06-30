@@ -21,13 +21,10 @@ int main(){
     int n;
     cout<<"enter the number of nodes: ";
     cin>>n;
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
         int data;
         cout<<"enter the data of node "<<i+1<<": ";
-        cin>>data;
-        Node* newNode = new Node(data);
-        newNode->next = head;
-        head = newNode;
+        
     }
     cout<<"The linked list is: ";
     Node* temp = head;
