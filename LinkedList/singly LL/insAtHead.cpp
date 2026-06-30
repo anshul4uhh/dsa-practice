@@ -13,7 +13,7 @@ class Node{
 };
 
 int main(){
-    Node* head = NULL;
+    Node* head = new Node(0); // dummy head node
     int n;
     cout<<"enter the number of nodes: ";
     cin>>n;
