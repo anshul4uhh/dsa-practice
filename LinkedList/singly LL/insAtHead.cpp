@@ -13,11 +13,11 @@ class Node{
 };
 
 int main(){
-    Node* head = new Node(0); // dummy head node
+    Node* head = new Node(10); // dummy head node
     int n;
     cout<<"enter the number of nodes: ";
     cin>>n;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         int data;
         cout<<"enter the data of node "<<i+1<<": ";
         cin>>data;
