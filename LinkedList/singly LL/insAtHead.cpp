@@ -21,6 +21,12 @@ void printList(Node* head) {
     cout << endl;
 }
 
+void insertAtHead(Node*& head, int value) {
+    Node* newNode = new Node(value);
+    newNode->next = head;
+    head = newNode;
+}
+
 int main() {
     int n;
     cout << "Enter number of nodes: ";
