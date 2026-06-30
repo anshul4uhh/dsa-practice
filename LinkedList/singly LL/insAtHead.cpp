@@ -24,6 +24,8 @@ int main(){
     for(int i=0;i<n;i++){
         int data;
         cout<<"enter the data of node "<<i+1<<": ";
+        cin>>data;
+        if
         
     }
     cout<<"The linked list is: ";
